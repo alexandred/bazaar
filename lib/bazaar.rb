@@ -19,6 +19,9 @@ module Bazaar
   def self.super_object
     (get_item("superadj") + ' ' + get_item("superitems")).humanize
   end
+  def self.super_math_object
+    (get_item("superadj") + ' ' + get_item("supermathitems")).humanize
+  end
   def self.heroku
     get_item("superadj") + '-' + get_item("superitems") + '-' + rand(0-9999).to_s
   end
